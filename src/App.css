@@ -1,0 +1,78 @@
+/* App.css */
+
+/* Main container full height, center content */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  box-sizing: border-box;
+}
+
+/* Card style for the form */
+.card {
+  background: rgba(255, 255, 255, 0.97);
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Title */
+.card h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  color: #333;
+}
+
+/* Input container */
+.input-group {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.input-group input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  margin-top: 0.5rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Button styling */
+button {
+  background: #4e9af1;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #357ed6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .input-group {
+    flex-direction: column;
+  }
+}

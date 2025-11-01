@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Medicine Reminder from Prescription</title>
+    <meta name="description" content="Upload prescription and get medicine reminders with audio alerts. Built with React + Tesseract.js." />
+    <meta name="theme-color" content="#66a6ff" />
+
+    <!-- Social Meta -->
+    <meta property="og:title" content="Medicine Reminder App" />
+    <meta property="og:description" content="Get notified when it's time to take your medicine from your prescription image." />
+    <meta property="og:image" content="%PUBLIC_URL%/preview.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Custom Styling -->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #89f7fe, #66a6ff);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #root {
+        width: 100%;
+      }
+
+      ::selection {
+        background-color: #1b74e4;
+        color: #fff;
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
